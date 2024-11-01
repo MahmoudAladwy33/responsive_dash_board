@@ -45,7 +45,7 @@ abstract class AppStyles {
       fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
-    );
+    ); 
   }
 
   static TextStyle styleSemiBold20(BuildContext context) {

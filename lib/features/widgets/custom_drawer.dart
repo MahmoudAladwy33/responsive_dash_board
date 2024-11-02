@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/core/helpers/app_images.dart';
+import 'package:responsive_dash_board/features/widgets/drawer_list_view.dart';
 import 'package:responsive_dash_board/features/widgets/user_info_list_tile.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -16,6 +17,10 @@ class CustomDrawer extends StatelessWidget {
             title: 'UserName',
             subtitle: 'demo@gmail.com',
           ),
+          SizedBox(
+            height: 8,
+          ),
+          DrawerListView(),
         ],
       ),
     );

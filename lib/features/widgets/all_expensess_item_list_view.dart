@@ -55,17 +55,15 @@ class _AllExpensessItemListViewState extends State<AllExpensessItemListView> {
                     child: AllExpensessItem(
                         model: item, isSlected: isSelected == index),
                   )
-                : Expanded(
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          isSelected = index;
-                        });
-                      },
-                      child: AllExpensessItem(
-                        model: item,
-                        isSlected: isSelected == index,
-                      ),
+                : GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        isSelected = index;
+                      });
+                    },
+                    child: AllExpensessItem(
+                      model: item,
+                      isSlected: isSelected == index,
                     ),
                   ),
           ),

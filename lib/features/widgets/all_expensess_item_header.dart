@@ -17,28 +17,25 @@ class AllExpensessItemHeader extends StatelessWidget {
         Container(
           width: 60,
           height: 60,
+          padding: const EdgeInsets.all(14),
           decoration: ShapeDecoration(
+            color: imageBackground ?? const Color(0xFFFAFAFA),
             shape: const OvalBorder(),
-            color: imageBackground ?? Colors.white,
           ),
-          child: Center(
-            child: SvgPicture.asset(
-              image,
-              colorFilter: ColorFilter.mode(
-                imageColor ?? const Color(0xff4eb7f2),
-                BlendMode.srcIn,
-              ),
+          child: SvgPicture.asset(
+            image,
+            colorFilter: ColorFilter.mode(
+              imageColor ?? const Color(0xff4EB7F2),
+              BlendMode.srcIn,
             ),
           ),
         ),
-        const Expanded(
-          child: SizedBox(),
-        ),
+        const Spacer(),
         Transform.rotate(
           angle: -1.57079633 * 2,
           child: Icon(
-            color: imageColor == null ? const Color(0xFF064061) : Colors.white,
             Icons.arrow_back_ios_new_outlined,
+            color: imageColor == null ? const Color(0xFF064061) : Colors.white,
           ),
         ),
       ],

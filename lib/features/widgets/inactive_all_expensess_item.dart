@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../core/theme/text_style.dart';
@@ -11,7 +10,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
     required this.model,
   });
 
-  final AllExpenssesItemModel model;
+  final AllExpensessItemModel model;
 
   @override
   Widget build(BuildContext context) {

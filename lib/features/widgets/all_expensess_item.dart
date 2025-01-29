@@ -6,13 +6,13 @@ import 'inactive_all_expensess_item.dart';
 
 class AllExpensessItem extends StatelessWidget {
   const AllExpensessItem(
-      {super.key, required this.model, required this.isSlected});
-  final AllExpenssesItemModel model;
-  final bool isSlected;
+      {super.key, required this.itemModel, required this.isSelected});
+  final AllExpensessItemModel itemModel;
+  final bool isSelected;
   @override
   Widget build(BuildContext context) {
-    return isSlected
-        ? ActiveAllExpensessItem(model: model)
-        : InActiveAllExpensessItem(model: model);
+    return isSelected
+        ? ActiveAllExpensessItem(itemModel: itemModel)
+        : InActiveAllExpensessItem(model: itemModel);
   }
 }

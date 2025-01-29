@@ -10,12 +10,13 @@ class AllExpensess extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           AllExpensessHeader(),
           SizedBox(
             height: 16,
           ),
-          AllExpensessItemListView(),
+          AllExpensessItemsListView(),
         ],
       ),
     );

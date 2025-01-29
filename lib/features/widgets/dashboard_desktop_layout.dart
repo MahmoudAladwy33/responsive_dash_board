@@ -11,22 +11,25 @@ class DashboardDesktopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        Expanded(
-          child: CustomDrawer(),
-        ),
+        Expanded(child: CustomDrawer()),
         SizedBox(
           width: 32,
         ),
         Expanded(
             flex: 2,
-            child: Column(
-              children: [
-                AllExpensess(),
-                SizedBox(
-                  height: 24,
-                ),
-                QuickInvoice(),
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 40,
+                  ),
+                  AllExpensess(),
+                  SizedBox(
+                    height: 24,
+                  ),
+                  QuickInvoice(),
+                ],
+              ),
             ))
       ],
     );
